@@ -1,0 +1,42 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=16b28cfc_002De6d2_002D4d23_002Db834_002D6a0a8cffde9f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BinomialCoefficientTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.Tests.BinomialCoefficientTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=81e689c3_002Dde0c_002D4dbf_002D925e_002Dec8a5c4a16c6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BeautifulNumbersServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ea1d394d_002Df266_002D4113_002D8fab_002D3525029247a7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetCompositionCountTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetCompositionCountTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eaec2b98_002D437f_002D440e_002Dac86_002D86e892a0daf8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetCompositionCountTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetCompositionCountTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetBeautifulNumbersCountTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>
