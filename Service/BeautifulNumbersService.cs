@@ -7,8 +7,6 @@ public class BeautifulNumbersService
     //Колличесто суммируемых разрядов
     const int DigitsCount = 6;
 
-    private long[][] partialSolutions;
-    
     /// <summary>
     /// Количество 13-ти значных красивых чисел с ведущими нулями в тринадцатиричной системе исчисления
     /// </summary>
@@ -19,72 +17,47 @@ public class BeautifulNumbersService
     /// Число 1234AB988BABA - некрасивое, так как 1+2+3+4+A+B != 8+8+B+A+B+A
     /// </remarks>
     public long GetBeautifulNumbersCount()
-    {
-       return GetBeautifulNumbersCount(DigitsCount, NumeralSystem);
+    { 
+       //домножаем т.к. есть свободный разряд
+       return GetLuckyTicketCount(DigitsCount, NumeralSystem) * NumeralSystem;
     }
 
     /// <summary>
-    /// Обобщенный подход для поиска крассивых числел вида dd..dDdd..d в любой с.с.,
-    /// где dd..d - части фиксированной лины суммы разрядов которых сравниваются, D - свободный разряд
+    /// Обобщенный подход для расчета колличества счасливых билетов в любой с.с.,
     /// </summary>
-    /// <param name="digitsCount">Длина сравниваемой части числа</param>
+    /// <param name="digitsCount">Длина сравниваемой части</param>
     /// <param name="numeralSystem">Система счисления</param>
-    /// <remarks>Требуется для возможности протестировать</remarks>
-    internal long GetBeautifulNumbersCount(int digitsCount, int numeralSystem)
+    internal long GetLuckyTicketCount(int digitsCount, int numeralSystem)
     {
         int maxDigitValue = numeralSystem - 1;
+        
+        // инициализируем матрицу для частичных решений
+        var partialSolutions = new long[digitsCount][];
+        partialSolutions[0] = new long[numeralSystem];
+        for (int k = 0; k <= maxDigitValue; ++k)
+        {
+            partialSolutions[0][k] = 1;
+        }
+        
+        for (int n = 1; n < digitsCount; ++n)
+        {
+            int maxSum = (n + 1) * maxDigitValue;
+            partialSolutions[n] = new long[maxSum + 1];
+            for (int k = maxSum; k >= 0; --k)
+            {
+                int statIndex = Math.Max(0, k - n * maxDigitValue);
+                for (int i = statIndex; i < numeralSystem && i <= k; ++i)
+                {
+                    partialSolutions[n][k] += partialSolutions[n - 1][k - i];
+                }
+            }
+        }
 
         long result = 0;
-        //В случае 13-й с.с. проходим от 0 до 72 т.к. 72 максимальная сумма из 6 цифр 
-        for (var n = 0; n <= maxDigitValue * digitsCount; ++n)
+        for (int k = 0; k <= maxDigitValue * digitsCount; ++k)
         {
-            // вычисляем колличество композиций задонной длины
-            var compositionCount = GetCompositionCount(n, digitsCount, numeralSystem);
-            // возводим в квадрат т.к. любое число с суммой n c одной и другой стороны нас устраивает
-            result += compositionCount * compositionCount;
+            result += partialSolutions[digitsCount - 1][k] * partialSolutions[digitsCount - 1][k];
         }
-        // домножаем на значение с.c. т.к. 1 разряд свободный и при его изменении числа не перестанут быть красивыми
-        return result * numeralSystem;
-    }
-    
-    internal long GetCompositionCount(int sumValue, int digitsCount, int numeralSystem)
-    {
-        if (partialSolutions == null) PartialSolutionsMatrixInit(digitsCount, numeralSystem);
-        return CalculateCompositionsCount(0, sumValue, digitsCount, numeralSystem);
-    }
-    
-    private long CalculateCompositionsCount(int index, int sumValue, int digitsCount, int numeralSystem)
-    {
-        if (index == digitsCount) return sumValue == 0 ? 1 : 0;
-        if (sumValue == 0)  return 1;
-
-        if (partialSolutions[index][sumValue - 1] != -1)
-        {
-            return partialSolutions[index][sumValue - 1];
-        }
-        
-        long answer = 0;
- 
-        for(int i = 0; i < numeralSystem; i++)
-        {
-            if (i > sumValue) break;
-            answer += CalculateCompositionsCount(index + 1,sumValue - i, digitsCount, numeralSystem);
-        }
-        
-        partialSolutions[index][sumValue - 1] = answer;
-        
-        return answer;
-    }
-
-    private void PartialSolutionsMatrixInit(int digitsCount, int numeralSystem)
-    {
-        int maxValueOfSumDigits = (numeralSystem - 1) * digitsCount;
-        // Инициализируем матрицу с количеством  для частичных решений
-        partialSolutions = new long[digitsCount][];
-        for (int i = 0; i < digitsCount; ++i)
-        {
-            partialSolutions[i] = new long[maxValueOfSumDigits];
-            partialSolutions[i].Populate(-1);
-        }
+        return result;
     }
 }

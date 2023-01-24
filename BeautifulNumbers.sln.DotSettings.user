@@ -5,6 +5,18 @@
     &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.Tests.BinomialCoefficientTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=24ebe502_002D57ec_002D4f2c_002D9edc_002D7ab131b11d9d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;BeautifulNumbers.Test&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\v.savkin\RiderProjects\BeautifulNumbers\BeautifulNumbers.Test" Presentation="&amp;lt;BeautifulNumbers.Test&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=36433051_002D20db_002D4d6b_002D9fcf_002Dcb4f69c66292/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BeautifulNumbersServiceTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
 	
 	
 	
@@ -19,18 +31,24 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e83281a1_002Dc306_002D4a4b_002D8bf2_002D73bbf2cfe0dd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetBeautifulNumbersCountTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetBeautifulNumbersCountTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ea1d394d_002Df266_002D4113_002D8fab_002D3525029247a7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetCompositionCountTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetCompositionCountTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eaec2b98_002D437f_002D440e_002Dac86_002D86e892a0daf8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetCompositionCountTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef7d426e_002D1bb7_002D4e74_002D961b_002Da5152c24e102/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetBeautifulNumbersCountTest(1,2,4)" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetCompositionCountTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetBeautifulNumbersCountTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E2257A8B-204B-49C9-98FF-79ED496AD267::net7.0::BeautifulNumbers.Test.BeautifulNumbersServiceTests.GetBeautifulNumbersCountTest(1,2,4)&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	
 	
 	
 	
